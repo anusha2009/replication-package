@@ -1,0 +1,58 @@
+[
+  {
+    "quality_attribute": "Usability",
+    "stimulus": "A user interacts with the application without prior training.",
+    "stimulus_source": "The source of this stimulus is any kind of user who has not received training on using the application.",
+    "response": "The response to this stimulus is that the application should be used with no training by any kind of user",
+    "response_measure": "",
+    "environment": "Normal operation of the application",
+    "artifact": "The EZGas application itself",
+    "sustainability_dimension": [
+      "Social",
+      "Technical"
+    ],
+    "description": "The application should be designed to be easy to use, even for users who have not used it before. This includes providing clear instructions and intuitive interfaces."
+  },
+  {
+    "quality_attribute": "Performance",
+    "stimulus": "A user requests a service from the application.",
+    "stimulus_source": "The user is interacting with the application through a web or mobile interface.",
+    "response": "The response to this stimulus is that all functions should complete in less than one second.",
+    "response_measure": "Time taken by functions to complete (measured in seconds)",
+    "environment": "Normal operation of the application",
+    "artifact": "The EZGas application",
+    "sustainability_dimension": [
+      "Economic",
+      "Technical"
+    ],
+    "description": "The application should be designed to respond quickly to user requests, providing a fast and responsive experience."
+  },
+  {
+    "quality_attribute": "Portability",
+    "stimulus": "A user accesses the application on a different device or platform.",
+    "stimulus_source": "The user is interacting with the application through a web or mobile interface on a different device or platform.",
+    "response": "The response to this stimulus is that the application runs on Safari",
+    "response_measure": "Compatibility with different browsers and operating systems.",
+    "environment": "Normal operation of the application",
+    "artifact": "The EZGas application",
+    "sustainability_dimension": [
+      "Economic",
+      "Technical"
+    ],
+    "description": "The application should be designed to work seamlessly on different devices and platforms, without requiring changes to the code."
+  },
+  {
+    "quality_attribute": "Portability",
+    "stimulus": "A user attempts to access the application on different browsers",
+    "stimulus_source": "User",
+    "response": "The application runs on all major browsers (Chrome, Edge, Firefox, Safari) (7 and more recent)",
+    "response_measure": "Compatibility with different browsers and operating systems.",
+    "environment": "Normal operation of the application",
+    "artifact": "The EZGas application",
+    "sustainability_dimension": [
+      "Economic",
+      "Technical"
+    ],
+    "description": "Portability refers to the ability of the system to be accessed from different devices and environments. The stimulus is a user attempting to access the application on different browsers, and the response is that the application runs on all major browsers."
+  }
+]

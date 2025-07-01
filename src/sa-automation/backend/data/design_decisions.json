@@ -1,0 +1,32 @@
+[
+  {
+    "decision": "Everything is data philosophy",
+    "rationale": "To avoid entangling information about an Arachne application with the Clojure runtime itself, to provide a strong set of default settings which are also highly overridable, and configurable to suit the unique needs of users",
+    "design_rule": "The configuration value will have a schema that defines what types of entities can exist in the configuration, and what their expected properties are. Each distinct module will have the ability to contribute to the schema and define entity types specific to its own domain.",
+    "constraint": "",
+    "impacted_quality_attributes": [
+      ""
+    ],
+    "description": "Arachne will take the everything is data philosophy to its logical extreme, and encode as much information about the application as possible in a single, highly general data structure. This includes not just data that is normally thought of as config data, but the structure and definition of the application itself."
+  },
+  {
+    "decision": "Configuration Schema as Datomic-Style Database",
+    "rationale": "The rationale is not explicitly stated, but it seems that the steering group decided to use a Datomic-style schema due to its ease of implementation and performance.",
+    "design_rule": "The configuration schema must be implemented as a Datomic-style database. The schema must be open and extensible to additional modules by adding additional attributes and meta-attributes",
+    "constraint": "",
+    "impacted_quality_attributes": [
+      ""
+    ],
+    "description": "The configuration schema will be implemented as a Datomic-style database, using either Datomic Pro, Datomic Free or Datascript."
+  },
+  {
+    "decision": "Modularizing Arachne",
+    "rationale": "The goal is to make Arachne as modular as possible, allowing for community contributions, swappable functionality, and easy maintenance. Existing systems like OSGi are deemed too heavyweight and complex",
+    "design_rule": "Modules must specify their dependencies using the dependency management tool (e.g., Maven). Each module JAR will contain an arachne-modules.edn file with module definition maps.",
+    "constraint": "Circular dependencies between modules are not allowed. Module versioning is handled by the packaging tool, not Arachne.",
+    "impacted_quality_attributes": [
+      ""
+    ],
+    "description": "Arachne will adopt a modular structure where modules can be easily added, removed, or replaced without affecting the core functionality of the application. This is achieved through a combination of external dependency management tools (e.g., Maven/Leiningen/Boot) and internal module definition files (arachne-modules.edn)."
+  }
+]

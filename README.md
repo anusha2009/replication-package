@@ -4,30 +4,44 @@ This repository is a companion page for the following thesis:
 
 It contains all the material required for replicating the study, including: source code, evalaution script, results of manual and LLM extraction, results of requirement indentification, related literature.
 
-## Quick start
-Here a documentation on how to use the replication material should be provided.
+## Getting started
 
-### Getting started
+1. Data from requirement identification, design and evalaution phase are present in the [data](https://github.com/anusha2009/replication-package/tree/main/data) folder.
 
-1. Provide step-by-step instruction on how to use this repository, including requirements, and installation / script execution steps.
+2. Source code of the automation tool is present in the [src](https://github.com/anusha2009/replication-package/tree/main/src) folder.
 
-2. Code snippets should be formatted as follows.
-   - `git clone https://github.com/S2-group/template-replication-package`
+## Prerequisites to run the tool
 
-3. Links to specific folders / files of the repository can be linked in Markdown, for example this is a link to the [src](src/) folder.
+1. Python 3.12.0, pip 
+2. Node.js, NPM
 
-## Repository Structure
-This is the root directory of the repository. The directory is structured as follows:
 
-    template-replication-package
-     .
-     |
-     |--- src/                             Source code used in the thesis / paper
-     |
-     |--- documentation/                   Further structured documentation of the replication package content
-     |
-     |--- data/                            Data used in the thesis / paper 
-            |
-            |--- additional_subfolder/     Subfolders should be further nested to increase readability                 
-  
+## Steps to run the tool
+
+1. Clone the Repository
+```
+git clone https://github.com/anusha2009/replication-package.git
+cd replication-package/src
+```
+2. Backend setup
+
+```
+cd sa-automation/backend
+python -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+python main.py
+```
+3. Frontend setup
+
+```
+cd ../frontend
+npm install
+npm start
+```
+
+The tool is now accessible [here](http://localhost:3000).
+
+
+
 
